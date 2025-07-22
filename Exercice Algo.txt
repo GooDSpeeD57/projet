@@ -1,0 +1,128 @@
+// Exercice 1.6
+variable A,B :entier
+Début
+    A :=8
+    B :=5
+fin
+
+// Exercice 1.7
+Variable A,B,C :entier
+Début
+    A :=1
+    B :=A
+    C :=B
+    A :=C
+fin
+// Exercice 2.1
+Variable TVA,Bobjetht,objetttc :entier
+Début
+    TVA:=1.196
+    objetht:=9
+    objetttc=TVA*objetht
+fin
+
+//Version 2
+debut
+    ecrire "Prix objet hors taxe"
+    lire HT
+    TTC=HT*1.196
+    ecrire "Prix TTC :",TTC
+fin
+
+// Exercice 2.2
+Variable A,B,C,D :caractères
+Début
+    A:="Bonjour "
+    B:="Julien "
+    C:="votre nom est "
+    D:="Taesch" 
+    E:=A+B+C+D
+fin
+
+//Version 2
+debut
+    ecrire"entrez votre Prénom"
+    Lire prenom
+    ecrire"entrez votre Nom"
+    lire nom
+    ecrire "Bonjours",prenom,"votre prenom",nom
+fin
+
+// Exercice 2.3
+
+Variable A,B,C :entier
+Début
+    A:=2
+    B:=-5
+    C:= A*B
+
+    Si C < 0 alors
+        ecrire ="La valeur des 2 produit est Negatif"
+    Finsi
+    Si C=0 alors 
+        ecrire "La valeur des 2 produit est Nul"
+    finsi
+    SI C>0 alors
+        ecrire "La valeur des 2 produit est Positif"
+    Finsi
+fin
+
+//version2
+debut
+    ecrire " entrez votre premier chiffre"
+    lire a
+    ecrire " entrez votre second chiffre"
+    lire b
+    C=a*b
+    ecrire =c
+    Si C<0 alors
+        ecrire ="La valeur des 2 produit est Negatif"
+    Sinon
+        Si C=0 alors
+        ecrire ="La valeur des 2 produit est Nul"
+        sinon
+        ecrire ="La valeur des 2 produit est Positif"
+        finsi
+    finsi
+fin
+
+
+//exercice3.1
+debut
+    ecrire "Entrez un chiffre positif"
+    lire chiffre
+    si chiffre <10 alors ecrire "trop petit" 
+        si chiffre >20 alors ecrire "trop grand"
+        finsi
+    Tantque chiffre < 10 ou >20 faire
+    lire chiffre
+    fintantque
+fin
+//Version2
+debut
+    ecrire "Entrez un chiffre positif"
+    lire chiffre
+    Tantque chiffre <10 ou >20 faire
+        si chiffre >20 alors
+        ecrire "Trop Grand"
+        sinon 
+            Si chiffre <10 alors
+            ecrire "Trop Petit"
+        findesi
+        lire chiffre
+    fintantque
+    Ecire "correcte"
+fin
+
+//exercice 3.2
+debut
+    ecrire "choisissez un nombre que nous allons factoriser"
+    lire nombre
+    factorisation =1
+    resultat=1
+    Tanque factorisation <= nombre faire
+        resultat =  factorisation *resultat
+        factorisation = factorisation + 1
+        fintantque
+    ecrire resultat    
+fin     
