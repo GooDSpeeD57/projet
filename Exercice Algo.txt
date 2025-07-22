@@ -1,5 +1,4 @@
 // Exercice 1.6
-//
 variable A,B :entier
 Début
     A :=8
